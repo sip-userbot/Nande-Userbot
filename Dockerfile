@@ -1,4 +1,4 @@
-FROM nandeuserbotfile/nandeuserbot:python202
+FROM pandauserbotfile/pandauserbot:python202
 
 COPY . .
 
