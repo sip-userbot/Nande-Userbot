@@ -3,7 +3,7 @@ from . import _nandeutils, edit_or_reply, nandeub
 plugin_category = "plugins"
 
 
-@nandeub.ilhammansiz_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="suicide$",
     command=("suicide", plugin_category),
     info={
@@ -21,7 +21,7 @@ async def _(event):
     event = await edit_or_reply(event, OUTPUT)
 
 
-@nandeub.ilhammansiz_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="plugins$",
     command=("plugins", plugin_category),
     info={
@@ -37,7 +37,7 @@ async def _(event):
     await edit_or_reply(event, OUTPUT)
 
 
-@nandeub.ilhammansiz_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="env$",
     command=("env", plugin_category),
     info={
