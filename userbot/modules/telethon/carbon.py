@@ -165,7 +165,7 @@ all_col = [
 ]
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="carbon(?: |$)(.*)",
     command=("carbon", plugin_category),
     info={
@@ -209,7 +209,7 @@ async def crbn(event):
 
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="ccarbon(?: |$)(.*)",
     command=("ccarbon", plugin_category),
     info={
