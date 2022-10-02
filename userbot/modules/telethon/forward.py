@@ -31,7 +31,7 @@ async def all_groups_id(nande):
     return nandegroups
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="frwd$",
     command=("frwd", plugin_category),
     info={
@@ -62,7 +62,7 @@ async def _(event):
             LOGS.info(str(e))
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="resend$",
     command=("resend", plugin_category),
     info={
@@ -82,7 +82,7 @@ async def _(event):
     await event.respond(m)
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="fpost (.*)",
     command=("fpost", plugin_category),
     info={
