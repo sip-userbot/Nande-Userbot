@@ -67,7 +67,7 @@ plugin_category = "plugins"
 # ================================================
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="gpic( -s| -d)$",
     command=("gpic", plugin_category),
     info={
@@ -129,7 +129,7 @@ async def set_group_photo(event):  # sourcery no-metrics
         )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="promote(?: |$)(.*)",
     command=("promote", plugin_category),
     info={
@@ -174,7 +174,7 @@ async def promote(event):
         )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="demote(?: |$)(.*)",
     command=("demote", plugin_category),
     info={
@@ -218,7 +218,7 @@ async def demote(event):
         )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="ban(?: |$)(.*)",
     command=("ban", plugin_category),
     info={
@@ -279,7 +279,7 @@ async def _ban_person(event):
             )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="unban(?: |$)(.*)",
     command=("unban", plugin_category),
     info={
@@ -318,7 +318,7 @@ async def nothanos(event):
         await nandeevent.edit(f"**Error :**\n`{e}`")
 
 
-@nandeub.sip-userbot_cmd(incoming=True)
+@nandeub.sipuserbot_cmd(incoming=True)
 async def watcher(event):
     if is_muted(event.sender_id, event.chat_id):
         try:
@@ -327,7 +327,7 @@ async def watcher(event):
             LOGS.info(str(e))
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="mute(?: |$)(.*)",
     command=("mute", plugin_category),
     info={
@@ -432,7 +432,7 @@ async def startmute(event):
             )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="unmute(?:\s|$)([\s\S]*)",
     command=("unmute", plugin_category),
     info={
@@ -504,7 +504,7 @@ async def endmute(event):
 
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="kick(?: |$)(.*)",
     command=("kick", plugin_category),
     info={
@@ -546,7 +546,7 @@ async def endmute(event):
         )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="pin( loud|$)",
     command=("pin", plugin_category),
     info={
@@ -584,7 +584,7 @@ async def pin(event):
         )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="unpin( all|$)",
     command=("unpin", plugin_category),
     info={
@@ -631,7 +631,7 @@ async def pin(event):
         )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="undlt( -u)?(?: |$)(\d*)?",
     command=("undlt", plugin_category),
     info={
