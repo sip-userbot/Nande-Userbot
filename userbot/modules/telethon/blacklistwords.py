@@ -11,7 +11,7 @@ from ...resources import is_admin
 plugin_category = "modules"
 
 
-@NandeBot.sip-userbot_cmd(incoming=True, groups_only=True)
+@NandeBot.sipuserbot_cmd(incoming=True, groups_only=True)
 async def on_new_message(event):
     name = event.raw_text
     snips = sql.get_chat_blacklist(event.chat_id)
@@ -34,7 +34,7 @@ async def on_new_message(event):
             break
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="addblacklist(?:\s|$)([\s\S]*)",
     command=("addblacklist", plugin_category),
     info={
@@ -65,7 +65,7 @@ async def _(event):
     )
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="rmblacklist(?:\s|$)([\s\S]*)",
     command=("rmblacklist", plugin_category),
     info={
@@ -94,7 +94,7 @@ async def _(event):
     )
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="listblacklist$",
     command=("listblacklist", plugin_category),
     info={
