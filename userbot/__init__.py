@@ -92,7 +92,7 @@ from .Var import Config
 
 
 if Config.UPSTREAM_REPO == "NANDE_USERBOT":
-    UPSTREAM_REPO_URL = "https://github.com/ilhammansiz/PandaX_Userbot"
+    UPSTREAM_REPO_URL = "https://github.com/sip-userbot/Nande-Userbot"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
 
