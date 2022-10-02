@@ -5,7 +5,7 @@ from . import nandeub
 plugin_category = "plugins"
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="covid(?: |$)(.*)",
     command=("covid", plugin_category),
     info={
