@@ -31,7 +31,7 @@ LOGO = Config.ALIVE_PIC = SqL.getdb("ALIVE_PIC") or "https://telegra.ph/file/462
 
 usernames = Config.TG_BOT_USERNAME
 
-@NandeBot.ilhammansiz_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="alive$",
     command=("alive", plugin_category),
     info={
