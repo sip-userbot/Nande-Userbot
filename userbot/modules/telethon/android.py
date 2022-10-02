@@ -11,7 +11,7 @@ from . import edit_delete, edit_or_reply, nandeub
 plugin_category = "plugins"
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="magisk$",
     command=("magisk", plugin_category),
     info={
@@ -45,7 +45,7 @@ async def kakashi(event):
     await edit_or_reply(event, releases)
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="device(?: |$)(\S*)",
     command=("device", plugin_category),
     info={
@@ -83,7 +83,7 @@ async def device_info(event):
     await edit_or_reply(event, reply)
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="codename(?: |)([\S]*)(?: |)([\s\S]*)",
     command=("codename", plugin_category),
     info={
@@ -133,7 +133,7 @@ async def codename_info(event):
     await edit_or_reply(event, reply)
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="specs(?: |)([\S]*)(?: |)([\s\S]*)",
     command=("specs", plugin_category),
     info={
@@ -200,7 +200,7 @@ async def devices_specifications(event):
     await edit_or_reply(event, reply)
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="twrp(?: |$)(\S*)",
     command=("twrp", plugin_category),
     info={
