@@ -132,7 +132,7 @@ async def upload(path, event, udir_event, nandeflag=None):  # sourcery no-metric
         UPLOAD_.uploaded += 1
 
 
-@nandeub.ilhammansiz_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="upload( -f)? ([\s\S]*)",
     command=("upload", plugin_category),
     info={
