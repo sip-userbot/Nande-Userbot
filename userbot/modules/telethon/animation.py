@@ -7,7 +7,7 @@ pandaub = NandeBot
 plugin_category = "modules"
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="think$",
     command=("think", plugin_category),
     info={
@@ -43,7 +43,7 @@ async def _(event):
         deq.rotate(1)
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="nothappy$",
     command=("nothappy", plugin_category),
     info={
@@ -97,7 +97,7 @@ async def _(event):
         deq.rotate(1)
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="heart$",
     command=("heart", plugin_category),
     info={
@@ -133,7 +133,7 @@ async def _(event):
         deq.rotate(1)
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="earth$",
     command=("earth", plugin_category),
     info={
@@ -169,7 +169,7 @@ async def _(event):
         deq.rotate(1)
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="smoon$",
     command=("smoon", plugin_category),
     info={
@@ -198,7 +198,7 @@ async def _(event):
         await event.edit(animation_chars[i % 8])
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="tmoon$",
     command=("tmoon", plugin_category),
     info={
