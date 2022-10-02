@@ -13,7 +13,7 @@ cmdhd = Config.COMMAND_HAND_LER
 extractor = URLExtract()
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="custom (pmpermit|pmblock|pmpic|NAME)$",
     command=("custom", plugin_category),
     info={
@@ -44,7 +44,7 @@ extractor = URLExtract()
         ],
     },
 )
-async def custom_Nande-Userbot(event):
+async def custom_nandeuserbot(event):
     "To customize your Nande-Userbot."
     reply = await event.get_reply_message()
     text = reply.text
@@ -65,7 +65,7 @@ async def custom_Nande-Userbot(event):
     await edit_or_reply(event, f"__Your custom {input_str} has been updated__")
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="delcustom (pmpermit|pmblock|pmpic|NAME)$",
     command=("delcustom", plugin_category),
     info={
@@ -80,7 +80,7 @@ async def custom_Nande-Userbot(event):
         ],
     },
 )
-async def custom_pandauserbot(event):
+async def custom_nandeuserbot(event):
     "To delete costomization of your Nande-Userbot."
     input_str = event.pattern_match.group(1)
     if input_str == "pmpermit":
