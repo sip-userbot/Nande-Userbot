@@ -125,7 +125,7 @@ async def cmdlist():
     return outstr
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="help ?(-c|-p|-t)? ?(.*)?",
     command=("help", plugin_category),
     info={
@@ -161,7 +161,7 @@ async def _(event):
     await edit_or_reply(event, outstr)
     
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="inline(?: |$)(.*)",
     command=("inline", plugin_category),
     info={
@@ -178,7 +178,7 @@ async def _(event):
     botfer = await results[0].click(event.chat_id, reply_to=reply_to_id, hide_via=True)
     await edit_or_reply(event, botfer)
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="cmds(?: |$)(.*)",
     command=("cmds", plugin_category),
     info={
@@ -211,7 +211,7 @@ async def _(event):
     )
 
 
-@nandeub.ilhammansiz_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="s (.*)",
     command=("s", plugin_category),
     info={
@@ -232,7 +232,7 @@ async def _(event):
     await edit_or_reply(event, out)
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="dc$",
     command=("dc", plugin_category),
     info={
