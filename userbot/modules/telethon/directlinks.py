@@ -15,7 +15,7 @@ from ..._misc.managers import edit_or_reply
 plugin_category = "plugins"
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="direct(?: |$)([\s\S]*)",
     command=("direct", plugin_category),
     info={
