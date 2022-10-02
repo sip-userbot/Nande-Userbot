@@ -24,7 +24,7 @@ CMD_FIG = {
 }
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="figlet(?: |$)(.*)",
     command=("figlet", plugin_category),
     info={
