@@ -7,7 +7,7 @@ nandeub = NandeBot
 plugin_category = "modules"
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="stupid$",
     command=("stupid", plugin_category),
     info={
@@ -41,7 +41,7 @@ async def _(event):
         await event.edit(animation_chars[i % 14])
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="bombs$",
     command=("bombs", plugin_category),
     info={
@@ -74,7 +74,7 @@ async def _(event):
     await asyncio.sleep(2)
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="call$",
     command=("call", plugin_category),
     info={
@@ -112,7 +112,7 @@ async def _(event):
         await event.edit(animation_chars[i % 18])
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="kill$",
     command=("kill", plugin_category),
     info={
@@ -144,7 +144,7 @@ async def _(event):
         await event.edit(animation_chars[i % 12])
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="wtf$",
     command=("wtf", plugin_category),
     info={
@@ -169,7 +169,7 @@ async def _(event):
         await event.edit(animation_chars[i % 5], link_preview=True)
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="ding$",
     command=("ding", plugin_category),
     info={
@@ -199,7 +199,7 @@ async def _(event):
         await event.edit(animation_chars[i % 10])
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="hypno$",
     command=("hypno", plugin_category),
     info={
@@ -234,7 +234,7 @@ async def _(event):
         await event.edit(animation_chars[i % 15])
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="candy$",
     command=("candy", plugin_category),
     info={
@@ -252,7 +252,7 @@ async def _(event):
         deq.rotate(1)
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="gangasta$",
     command=("gangasta", plugin_category),
     info={
@@ -280,7 +280,7 @@ async def _(event):
     await event.edit("EVERyBOdy iZ GangSTur UNtIL I ArRivE 🔥🔥🔥")
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="charging$",
     command=("charging", plugin_category),
     info={
