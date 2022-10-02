@@ -67,7 +67,7 @@ def random_color():
     ]
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="gray(?: |$)(.*)",
     command=("gray", plugin_category),
     info={
