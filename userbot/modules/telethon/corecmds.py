@@ -19,7 +19,7 @@ DELETE_TIMEOUT = 5
 thumb_image_path = os.path.join(Config.TMP_DOWNLOAD_DIRECTORY, "thumb_image.jpg")
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="install$",
     command=("install", plugin_category),
     info={
@@ -55,7 +55,7 @@ async def install(event):
             os.remove(downloaded_file_name)
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="load (.*)",
     command=("load", plugin_category),
     info={
@@ -82,7 +82,7 @@ async def load(event):
         )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="send (.*)",
     command=("send", plugin_category),
     info={
@@ -114,7 +114,7 @@ async def send(event):
         await edit_or_reply(event, "404: File Not Found")
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="unload (.*)",
     command=("unload", plugin_category),
     info={
@@ -134,7 +134,7 @@ async def unload(event):
         await edit_or_reply(event, f"Successfully unload {shortname}\n{str(e)}")
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="uninstall (.*)",
     command=("uninstall", plugin_category),
     info={
