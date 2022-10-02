@@ -75,7 +75,7 @@ def time_formatter(milliseconds: int) -> str:
     return tmp[:-2]
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="download( -f)? ([\s\S]*)",
     command=("download", plugin_category),
     info={
@@ -164,7 +164,7 @@ async def download(target_file):
         await target_file.edit("Reply to a message to download to my local server.")
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="uploadir( -f)? ([\s\S]*)",
     command=("uploadir", plugin_category),
     info={
@@ -262,7 +262,7 @@ async def uploadir(udir_event):
         await udir_event.edit("404: Directory Not Found")
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="uploadi( -f)? ([\s\S]*)",
     command=("uploadi", plugin_category),
     info={
@@ -350,7 +350,7 @@ def extract_w_h(file):
         return width, height
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="uploadas( -f)? ([\s\S]*)",
     command=("uploadas", plugin_category),
     info={
