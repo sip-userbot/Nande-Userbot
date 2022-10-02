@@ -10,7 +10,7 @@ plugin_category = "plugins"
 PLACE = ""
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="adzan(?: |$)(.*)",
     command=("adzan", plugin_category),
     info={
