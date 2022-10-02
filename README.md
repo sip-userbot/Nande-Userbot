@@ -98,7 +98,7 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 * [Dan](https://github.com/pyrogram) for [Pyrogram](https://github.com/pyrogram/pyrogram)
 * [MarshalX](https://github.com/MarshalX/tgcalls) for [PyTgcalls](https://github.com/MarshalX/tgcalls)
 * [Ilham Mansiz](https://github.com/ilhammansiz) for [PandaX_Userbot](https://github.com/ilhammansiz/PandaX_Userbot)
-* [Nande](https://github.com/sip-userbot) for [Nande-Userbot](https://github.com/sip-userbot/Nande-Userbot
+* [Nande](https://github.com/sip-userbot) for [Nande-Userbot](https://github.com/sip-userbot/Nande-Userbot)
 
 ## License
 Licensed under [Nande-Userbot Public License](https://github.com/sip-userbot/Nande-Userbot/blob/PandaUserbot/LICENSE) - Version 1.d, February 2020
