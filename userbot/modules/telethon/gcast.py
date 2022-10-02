@@ -11,7 +11,7 @@ plugin_category = "plugins"
 
 
 
-@PandaBot.sip-userbot_cmd(
+@PandaBot.sipuserbot_cmd(
     pattern="gcast(?: |$)(.*)",
     command=("gcast", plugin_category),
     info={
@@ -52,7 +52,7 @@ async def gcast(event):
 
 
 
-@nandeBot.sip-userbot_cmd(
+@nandeBot.sipuserbot_cmd(
     pattern="gucast(?: |$)(.*)",
     command=("gucast", plugin_category),
     info={
