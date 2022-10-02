@@ -31,7 +31,7 @@ gvarstatus = SqL.getdb
 addgvar = SqL.setdb
 delgvar = SqL.deldb
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="(set|get|del) var (.*)",
     command=("var", plugin_category),
     info={
@@ -122,7 +122,7 @@ async def variable(var):  # sourcery no-metrics
         del heroku_var[variable]
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="usage$",
     command=("usage", plugin_category),
     info={
@@ -192,7 +192,7 @@ async def dyno_usage(dyno):
     )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="(herokulogs|logs)$",
     command=("logs", plugin_category),
     info={
@@ -276,7 +276,7 @@ oldvars = {
 }
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="(set|get|del)db(?: |$)([\s\S]*)",
     command=("db", plugin_category),
     info={
