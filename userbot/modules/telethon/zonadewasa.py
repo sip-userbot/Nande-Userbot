@@ -12,7 +12,7 @@ from ...Var import Config
 plugin_category = "plugins"
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="payudara(?: |$)(.*)",
     command=("payudara", plugin_category),
     info={
