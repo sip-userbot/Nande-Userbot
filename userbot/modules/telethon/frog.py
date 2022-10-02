@@ -5,7 +5,7 @@ from ... import bot, nandeub
 plugin_category = "plugins"
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="frog(?: |$)(.*)",
     command=("frog", plugin_category),
     info={
