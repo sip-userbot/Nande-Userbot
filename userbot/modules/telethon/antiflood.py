@@ -15,7 +15,7 @@ ANTI_FLOOD_WARN_MODE = ChatBannedRights(
 )
 
 
-@nandeub.sip-userbot_cmd(incoming=True, groups_only=True)
+@nandeub.sipuserbot_cmd(incoming=True, groups_only=True)
 async def _(event):
     if not CHAT_FLOOD:
         return
@@ -55,7 +55,7 @@ because he reached the defined flood limit.""",
         )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="setflood(?: |$)(.*)",
     command=("setflood", plugin_category),
     info={
