@@ -23,7 +23,7 @@ def resize_image(image):
     im.save(image, "PNG")
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="(t(ele)?g(raph)?) ?(m|t|media|text)(?: |$)(.*)",
     command=("telegraph", plugin_category),
     info={
