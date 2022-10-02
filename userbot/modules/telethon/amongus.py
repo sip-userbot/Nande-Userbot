@@ -76,7 +76,7 @@ async def get_imposter_img(text: str) -> str:
     return webp_file
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="amongus(?: |$)(.*)",
     command=("amongus", plugin_category),
     info={
@@ -134,7 +134,7 @@ async def sayliecmd(event):
     await event.client.send_file(event.chat_id, imposter_file, reply_to=reply_to)
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="imposter(?: |$)(.*)",
     command=("imposter", plugin_category),
     info={
@@ -169,7 +169,7 @@ async def procces_img(event):
     await event.client.send_file(event.chat_id, imposter_file, reply_to=reply_to)
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="imp(|n) (.*)",
     command=("imp", plugin_category),
     info={
@@ -262,7 +262,7 @@ async def _(event):
         await event.client.send_file(event.chat_id, "CAADAQADQAADnjOcH-WOkB8DEctJAg")
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="timp(|n) (.*)",
     command=("timp", plugin_category),
     info={
