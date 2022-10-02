@@ -100,7 +100,7 @@ if Config.ANTISPAMBOT_BAN:
             )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="cascheck$",
     command=("cascheck", plugin_category),
     info={
@@ -148,7 +148,7 @@ async def caschecker(event):
     await nandeevent.edit(text)
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="spamcheck$",
     command=("spamcheck", plugin_category),
     info={
