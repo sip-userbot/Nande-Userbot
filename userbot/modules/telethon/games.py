@@ -3,7 +3,7 @@ from . import nandeub
 plugin_category = "plugins"
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="xoagame$",
     command=("xoagame", plugin_category),
     info={
