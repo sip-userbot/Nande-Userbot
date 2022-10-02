@@ -40,7 +40,7 @@ UNBAN_RIGHTS = ChatBannedRights(
 )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="gban(?: |$)(.*)",
     command=("gban", plugin_category),
     info={
@@ -124,7 +124,7 @@ async def nandegban(event):  # sourcery no-metrics
             pass
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="ungban(?: |$)(.*)",
     command=("ungban", plugin_category),
     info={
@@ -200,7 +200,7 @@ async def nandegban(event):
             )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="listgban$",
     command=("listgban", plugin_category),
     info={
@@ -225,7 +225,7 @@ async def gablist(event):
     await edit_or_reply(event, GBANNED_LIST)
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="gmute(?: |$)(.*)",
     command=("gmute", plugin_category),
     info={
@@ -291,7 +291,7 @@ async def startgmute(event):
             await reply.forward_to(BOTLOG_CHATID)
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="ungmute(?: |$)(.*)",
     command=("ungmute", plugin_category),
     info={
@@ -354,13 +354,13 @@ async def endgmute(event):
             )
 
 
-@nandeub.sip-userbot_cmd(incoming=True)
+@nandeub.sipuserbot_cmd(incoming=True)
 async def watcher(event):
     if is_muted(event.sender_id, "gmute"):
         await event.delete()
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="gkick(?: |$)(.*)",
     command=("gkick", plugin_category),
     info={
