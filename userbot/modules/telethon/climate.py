@@ -44,7 +44,7 @@ def sun(unix, ctimezone):
     return datetime.fromtimestamp(unix, tz=ctimezone).strftime("%I:%M %p")
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="climate(?: |$)(.*)",
     command=("climate", plugin_category),
     info={
@@ -131,7 +131,7 @@ async def get_weather(event):  # sourcery no-metrics
     )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="setcity(?: |$)(.*)",
     command=("setcity", plugin_category),
     info={
@@ -180,7 +180,7 @@ async def set_default_city(event):
     await edit_or_reply(event, f"`Set default event as {cityname}, {fullc_n}.`")
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="weather(?: |$)(.*)",
     command=("weather", plugin_category),
     info={
@@ -201,7 +201,7 @@ async def _(event):
     await edit_or_reply(event, output, parse_mode=_format.parse_pre)
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="wttr(?: |$)(.*)",
     command=("wttr", plugin_category),
     info={
