@@ -102,7 +102,7 @@ async def spam_function(event, sandy, nande, sleeptimem, sleeptimet, DelaySpam=F
                 )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="spam (.*)",
     command=("spam", plugin_category),
     info={
@@ -127,7 +127,7 @@ async def spammer(event):
     await spam_function(event, sandy, nande, sleeptimem, sleeptimet)
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="spspam$",
     command=("spspam", plugin_category),
     info={
@@ -197,7 +197,7 @@ async def stickerpack_spam(event):
         await event.client.send_file(BOTLOG_CHATID, reqd_sticker_set.documents[0])
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="cspam (.*)",
     command=("cspam", plugin_category),
     info={
@@ -229,7 +229,7 @@ async def tmeme(event):
             )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="wspam (.*)",
     command=("wspam", plugin_category),
     info={
@@ -261,7 +261,7 @@ async def tmeme(event):
             )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="(delayspam|dspam) (.*)",
     command=("delayspam", plugin_category),
     info={
