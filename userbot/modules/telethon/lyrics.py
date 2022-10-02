@@ -12,7 +12,7 @@ plugin_category = "plugins"
 GENIUS = os.environ.get("GENIUS_API_TOKEN", None)
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="lyrics ?(.*)",
     command=("lyrics", plugin_category),
     info={
@@ -49,7 +49,7 @@ async def _(event):
     await edit_or_reply(nandeevent, reply)
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="glyrics ?(.*)",
     command=("glyrics", plugin_category),
     info={
