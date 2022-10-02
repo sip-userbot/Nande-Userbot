@@ -97,7 +97,7 @@ async def bot_broadcast(event):
     await br_cast.edit(b_info, parse_mode="html")
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern=f"bot_users$",
     command=("bot_users", plugin_category),
     info={
@@ -179,7 +179,7 @@ async def ban_botpms(event):
     await event.reply(msg)
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern=f"bblist$",
     command=("bblist", plugin_category),
     info={
@@ -199,7 +199,7 @@ async def ban_starters(event):
     await edit_or_reply(event, msg)
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern=f"bot_antif (on|off)$",
     command=("bot_antif", plugin_category),
     info={
