@@ -234,7 +234,7 @@ async def add_to_pack(
     return pack, packname
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="kang(?: |$)(.*)",
     command=("kang", plugin_category),
     info={
@@ -386,7 +386,7 @@ async def kang(args):  # sourcery no-metrics
                 )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="pkang(?: |$)(.*)",
     command=("pkang", plugin_category),
     info={
@@ -555,7 +555,7 @@ async def pack_kang(event):  # sourcery no-metrics
     await nandeevent.edit(result)
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="gridpack(?: |$)(.*)",
     command=("gridpack", plugin_category),
     info={
@@ -662,7 +662,7 @@ async def pic2packcmd(event):
             )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="stkrinfo$",
     command=("stkrinfo", plugin_category),
     info={
@@ -710,7 +710,7 @@ async def get_pack_info(event):
     await nandeevent.edit(OUTPUT)
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="stickers ?(.*)",
     command=("stickers", plugin_category),
     info={
