@@ -29,7 +29,7 @@ url = "https://graphql.anilist.co"
 plugin_category = "plugins"
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="airing (.*)",
     command=("airing", plugin_category),
     info={
@@ -78,7 +78,7 @@ async def anilist(event):
     await event.edit(msg, link_preview=True)
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="manga(?: |$)(.*)",
     command=("manga", plugin_category),
     info={
@@ -110,7 +110,7 @@ async def get_manga(event):
     )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="sanime(?: |$)(.*)",
     command=("sanime", plugin_category),
     info={
@@ -156,7 +156,7 @@ async def get_manga(event):
         )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="char(?: |$)(.*)",
     command=("char", plugin_category),
     info={
@@ -213,7 +213,7 @@ async def character(event):
     )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="a(kaizoku|kayo)(?: |$)(.*)",
     command=("akaizoku", plugin_category),
     info={
@@ -270,7 +270,7 @@ async def anime_doqnload(event):
     await event.edit(result, parse_mode="html")
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="upcoming$",
     command=("upcoming", plugin_category),
     info={
@@ -292,7 +292,7 @@ async def upcoming(event):
     await edit_or_reply(event, rep, parse_mode="html")
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="w(hat)?anime$",
     command=("whatanime", plugin_category),
     info={
