@@ -12,7 +12,7 @@ from . import ALIVE_NAME, edit_or_reply, nandeub
 plugin_category = "plugins"
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="app (.*)",
     command=("app", plugin_category),
     info={
