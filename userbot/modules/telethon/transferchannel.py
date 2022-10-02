@@ -12,7 +12,7 @@ from ...Var import Config
 plugin_category = "plugins"
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="otransfer (.*)",
     command=("otransfer", plugin_category),
     info={
