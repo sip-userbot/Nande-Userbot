@@ -54,7 +54,7 @@ async def cult_small_video(
     return None
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="ffmpegsave$",
     command=("ffmpegsave", plugin_category),
     info={
@@ -101,7 +101,7 @@ async def ff_mpeg_trim_cmd(event):
         )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="vtrim(?: |$)(.*)",
     command=("vtrim", plugin_category),
     info={
@@ -187,7 +187,7 @@ async def ff_mpeg_trim_cmd(event):
     await edit_delete(nandeevent, f"`Completed Process in {ms} seconds`", 3)
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="atrim(?: |$)(.*)",
     command=("atrim", plugin_category),
     info={
@@ -251,7 +251,7 @@ async def ff_mpeg_trim_cmd(event):
     await edit_delete(nandeevent, f"`Completed Process in {ms} seconds`", 3)
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="ffmpegclear$",
     command=("ffmpegclear", plugin_category),
     info={
