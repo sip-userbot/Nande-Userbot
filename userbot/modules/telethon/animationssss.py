@@ -7,7 +7,7 @@ nandeub = NandeBot
 plugin_category = "modules"
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="star$",
     command=("star", plugin_category),
     info={
@@ -25,7 +25,7 @@ async def _(event):
         deq.rotate(1)
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="boxs$",
     command=("boxs", plugin_category),
     info={
@@ -43,7 +43,7 @@ async def _(event):
         deq.rotate(1)
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="rain$",
     command=("rain", plugin_category),
     info={
@@ -61,7 +61,7 @@ async def _(event):
         deq.rotate(1)
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="deploy$",
     command=("deploy", plugin_category),
     info={
@@ -93,7 +93,7 @@ async def _(event):
         await event.edit(animation_chars[i % 12])
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="dump(?: |$)(.*)",
     command=("dump", plugin_category),
     info={
@@ -139,7 +139,7 @@ async def _(event):
             await event.edit(something_else)
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="fleaveme$",
     command=("fleaveme", plugin_category),
     info={
@@ -170,7 +170,7 @@ async def _(event):
         await event.edit(animation_chars[i % 10])
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="loveu$",
     command=("loveu", plugin_category),
     info={
@@ -225,7 +225,7 @@ async def _(event):
         await event.edit(animation_chars[i % 35])
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="plane$",
     command=("plane", plugin_category),
     info={
@@ -253,7 +253,7 @@ async def _(event):
     await asyncio.sleep(3)
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="police$",
     command=("police", plugin_category),
     info={
@@ -285,7 +285,7 @@ async def _(event):
         await event.edit(animation_chars[i % 12])
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="jio$",
     command=("jio", plugin_category),
     info={
@@ -324,7 +324,7 @@ async def _(event):
         await event.edit(animation_chars[i % 19])
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="solarsystem$",
     command=("solarsystem", plugin_category),
     info={
