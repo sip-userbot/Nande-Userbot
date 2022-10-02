@@ -37,7 +37,7 @@ BANNED_RIGHTS = ChatBannedRights(
 )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="kickme$",
     command=("kickme", plugin_category),
     info={
@@ -54,7 +54,7 @@ async def kickme(leave):
     await leave.client.kick_participant(leave.chat_id, "me")
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="kickall$",
     command=("kickall", plugin_category),
     info={
@@ -98,7 +98,7 @@ async def _(event):
     )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="banall$",
     command=("banall", plugin_category),
     info={
@@ -144,7 +144,7 @@ async def _(event):
     )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="unbanall$",
     command=("unbanall", plugin_category),
     info={
@@ -179,7 +179,7 @@ async def _(event):
         await et.edit("{}: {} unbanned".format(event.chat_id, p))
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="ikuck ?(.*)",
     command=("ikuck", plugin_category),
     info={
@@ -329,7 +329,7 @@ None: {}""".format(
 
 
 # Ported by ©[NIKITA](t.me/kirito6969) and ©[EYEPATCH](t.me/NeoMatrix90)
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="zombies ?(.*)",
     command=("zombies", plugin_category),
     info={
