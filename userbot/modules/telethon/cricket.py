@@ -8,7 +8,7 @@ from . import edit_or_reply, nandeub, reply_id
 plugin_category = "plugins"
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="score$",
     command=("score", plugin_category),
     info={
@@ -43,7 +43,7 @@ async def _(event):
         )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="cric (.*)",
     command=("cric", plugin_category),
     info={
