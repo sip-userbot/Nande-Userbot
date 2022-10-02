@@ -21,7 +21,7 @@ DEFAULTUSER = str(AUTONAME) if AUTONAME else str(ALIVE_NAME)
 DEFAULTUSERBIO = str(DEFAULT_BIO) if DEFAULT_BIO else ""
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="clone(?: |$)(.*)",
     command=("clone", plugin_category),
     info={
@@ -62,7 +62,7 @@ async def _(event):
         )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="unclone$",
     command=("unclone", plugin_category),
     info={
