@@ -86,4 +86,4 @@ if not path.exists(".env"):
 
 print(f"Terima Kasih sudah menggunakan Nande Userbot")
 sleep(0.5)
-print("\nMade with 🐼 by @Nande-Userbot...")
+print("\nMade with 🐼 by @Nande-Userbot... silahkan ketik screen -S Nande-Userbot lalu enter ketik bash start.sh")
