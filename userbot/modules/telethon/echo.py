@@ -22,7 +22,7 @@ from . import get_user_from_event
 plugin_category = "plugins"
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="addecho$",
     command=("addecho", plugin_category),
     info={
@@ -62,7 +62,7 @@ async def echo(event):
         await edit_or_reply(catevent, "Hi")
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="rmecho$",
     command=("rmecho", plugin_category),
     info={
@@ -91,7 +91,7 @@ async def echo(event):
         await edit_or_reply(event, "The user is not activated with echo")
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="delecho( -a)?",
     command=("delecho", plugin_category),
     info={
@@ -137,7 +137,7 @@ async def echo(event):
             )
 
 
-@NandeBot.sip-userbot_cmd(
+@NandeBot.sipuserbot_cmd(
     pattern="listecho( -a)?$",
     command=("listecho", plugin_category),
     info={
@@ -201,7 +201,7 @@ async def echo(event):  # sourcery no-metrics
     await edit_or_reply(event, output_str)
 
 
-@NandeBot.sip-userbot_cmd(incoming=True, edited=False)
+@NandeBot.sipuserbot_cmd(incoming=True, edited=False)
 async def samereply(event):
     if is_echo(event.chat_id, event.sender_id) and (
         event.message.text or event.message.sticker
