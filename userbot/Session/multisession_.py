@@ -164,5 +164,5 @@ def Pyrogram():
         pyrobot4.join_chat("suportNande")
         pyrobot4.join_chat("Nandesupport")
         pyrobot4.send_message(PRIVATE, MSG_ON.format(pyrobot4.me.username, pyrover, cmdhr))
-    LOGS.info(f♤ 𝙽𝚊𝚗𝚍𝚎 - 𝚄𝚜𝚎𝚛𝚋𝚘𝚝 ♤\n✨ PyroVersion:{pyrover} [Telah Diaktifkan]")
+    LOGS.info(f"♤ 𝙽𝚊𝚗𝚍𝚎 - 𝚄𝚜𝚎𝚛𝚋𝚘𝚝 ♤\n✨ PyroVersion:{pyrover} [Telah Diaktifkan]")
     Nandepyro.idle()
