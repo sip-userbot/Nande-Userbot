@@ -8,7 +8,7 @@ from ..._misc.managers import edit_or_reply
 plugin_category = "plugins"
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="recognize ?(.*)",
     command=("recognize", plugin_category),
     info={
