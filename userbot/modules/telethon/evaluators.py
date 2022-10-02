@@ -10,7 +10,7 @@ from . import *
 plugin_category = "plugins"
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="exec(?: |$|\n)(.*)",
     command=("exec", plugin_category),
     info={
@@ -50,7 +50,7 @@ async def _(event):
         )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="eval(?: |$|\n)(.*)",
     command=("eval", plugin_category),
     info={
