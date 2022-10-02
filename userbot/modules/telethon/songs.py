@@ -33,7 +33,7 @@ SONGBOT_BLOCKED_STRING = "<code>Please unblock @songdl_bot and try again</code>"
 # =========================================================== #
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="song(320)?(?: |$)(.*)",
     command=("song", plugin_category),
     info={
@@ -120,7 +120,7 @@ async def delete_messages(event, chat, from_message):
     await event.client.send_read_acknowledge(chat)
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="vsong(?: |$)(.*)",
     command=("vsong", plugin_category),
     info={
@@ -194,7 +194,7 @@ async def _(event):
             os.remove(files)
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="shazam$",
     command=("shazam", plugin_category),
     info={
@@ -239,7 +239,7 @@ async def shazamcmd(event):
     await nandeevent.delete()
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="song2(?: |$)(.*)",
     command=("song2", plugin_category),
     info={
@@ -291,7 +291,7 @@ async def _(event):
         await delete_messages(event, chat, purgeflag)
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="szm$",
     command=("szm", plugin_category),
     info={
