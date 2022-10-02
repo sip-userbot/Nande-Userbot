@@ -27,7 +27,7 @@ def zipdir(dirName):
     return filePaths
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="zip(?: |$)(.*)",
     command=("zip", plugin_category),
     info={
@@ -68,7 +68,7 @@ async def zip_file(event):
     )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="tar(?: |$)(.*)",
     command=("tar", plugin_category),
     info={
@@ -110,7 +110,7 @@ async def tar_file(event):
     )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="unzip(?: |$)(.*)",
     command=("unzip", plugin_category),
     info={
@@ -193,7 +193,7 @@ async def zip_file(event):  # sourcery no-metrics
         )
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="untar(?: |$)(.*)",
     command=("untar", plugin_category),
     info={
