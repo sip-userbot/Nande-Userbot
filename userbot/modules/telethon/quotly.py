@@ -17,7 +17,7 @@ from . import nandeub
 from .carbon import all_col
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="q(?: |$)(.*)",
     command=("q", plugin_category),
     info={
