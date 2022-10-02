@@ -253,7 +253,7 @@ async def autopfp_start():
         AUTOPFP_START = gvarstatus("autopfp_strings") is not None
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="batmanpfp$",
     command=("batmanpfp", plugin_category),
     info={
@@ -274,7 +274,7 @@ async def _(event):
     await autopfp_start()
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="thorpfp$",
     command=("thorpfp", plugin_category),
     info={
@@ -295,7 +295,7 @@ async def _(event):
     await autopfp_start()
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="autopic ?(.*)",
     command=("autopic", plugin_category),
     info={
@@ -366,7 +366,7 @@ async def _(event):
     await digitalpicloop()
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="bloom$",
     command=("bloom", plugin_category),
     info={
@@ -416,7 +416,7 @@ async def _(event):
     await autoname_loop()
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="autobio$",
     command=("autobio", plugin_category),
     info={
@@ -435,7 +435,7 @@ async def _(event):
     await autobio_loop()
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="end (.*)",
     command=("end", plugin_category),
     info={
