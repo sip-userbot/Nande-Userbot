@@ -17,7 +17,7 @@ from . import deEmojify, reply_id
 plugin_category = "modules"
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="tts (.*)",
     command=("tts", plugin_category),
     info={
