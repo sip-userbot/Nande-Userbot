@@ -15,7 +15,7 @@ plugin_category = "plugins"
 LOGS = logging.getLogger(__name__)
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="chatblacklist (on|off)$",
     command=("chatblacklist", plugin_category),
     info={
@@ -71,7 +71,7 @@ async def chat_blacklist(event):
     await edit_delete(event, "It was turned off already")
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="addblkchat(s)? ?((.|\n)*)?",
     command=("addblkchat", plugin_category),
     info={
@@ -150,7 +150,7 @@ async def add_blacklist_chat(event):
     await event.client.reload(msg)
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="rmblkchat(s)? ?((.|\n)*)?",
     command=("rmblkchat", plugin_category),
     info={
@@ -214,7 +214,7 @@ async def add_blacklist_chat(event):
     await event.client.reload(msg)
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="listblkchats$",
     command=("listblkchats", plugin_category),
     info={
