@@ -71,7 +71,7 @@ REGEX_ = REGEX()
 sudo_enabledcmds = sudo_enabled_cmds()
 
 class NandeUserbotSession(TelegramClient):
-    def ilhammansiz_cmd(
+    def sip-userbot_cmd(
         self: TelegramClient,
         pattern: str or tuple = None,
         info: Union[str, Dict[str, Union[str, List[str], Dict[str, str]]]]
