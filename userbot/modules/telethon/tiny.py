@@ -7,7 +7,7 @@ from . import nandeub
 plugin_category = "plugins"
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="tiny(?: |$)(.*)",
     command=("tiny", plugin_category),
     info={
