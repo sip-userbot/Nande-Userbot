@@ -18,7 +18,7 @@ plugin_category = "plugins"
 BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\<buttonurl:(?:/{0,2})(.+?)(:same)?\>)")
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="cbutton(?: |$)(.*)",
     command=("cbutton", plugin_category),
     info={
@@ -85,7 +85,7 @@ async def _(event):
         os.remove(tgbot_reply_message)
 
 
-@nandeub.sip-userbot_cmd(
+@nandeub.sipuserbot_cmd(
     pattern="ibutton(?: |$)(.*)",
     command=("ibutton", plugin_category),
     info={
