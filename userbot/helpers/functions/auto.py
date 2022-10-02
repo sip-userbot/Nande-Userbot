@@ -79,9 +79,9 @@ else:
     heroku_var = None
 
 var = heroku_var
-sip-userbot = "BOT_TOKEN"
+sipuserbot = "BOT_TOKEN"
 botusername = "TG_BOT_USERNAME"
-sip-userbot = "PRIVATE_GROUP_BOT_API_ID"
+sipuserbot = "PRIVATE_GROUP_BOT_API_ID"
 
 
 async def autogrup():
@@ -262,11 +262,11 @@ async def autobot():
             await mansizbot(EditPhotoRequest(chat_id, InputChatUploadedPhoto(ll)))
             os.remove(photo)
             if not str(chat_id).startswith("-100"):
-               SqL.setdb(f"{sip-userbot}", "-100" + str(chat_id))
-               SqL.setdb(f"{sip-userbot}", token)
+               SqL.setdb(f"{sipuserbot}", "-100" + str(chat_id))
+               SqL.setdb(f"{sipuserbot}", token)
                SqL.setdb(f"{botusername}", f"@{username}")
-               var[sip-userbot] = "-100" + str(chat_id)
-               var[sip-userbot] = token
+               var[sipuserbot] = "-100" + str(chat_id)
+               var[sipuserbot] = token
                var[botusername] = f"@{username}"
             LOGS.info(f"SELESAI, ASSISTANT BOT ANDA SUDAH DIBUAT @{username} dan grup")
         else:
@@ -343,11 +343,11 @@ async def autobot():
         await mansizbot(EditPhotoRequest(chat_id, InputChatUploadedPhoto(ll)))
         os.remove(photo)
         if not str(chat_id).startswith("-100"):
-            SqL.setdb(f"{sip-userbot}", "-100" + str(chat_id))
-            SqL.setdb(f"{sip-userbot}", token)
+            SqL.setdb(f"{sipuserbot}", "-100" + str(chat_id))
+            SqL.setdb(f"{sipuserbot}", token)
             SqL.setdb(f"{botusername}", f"@{username}")  
-            var[sip-userbot] = "-100" + str(chat_id)
-            var[sip-userbot] = token
+            var[sipuserbot] = "-100" + str(chat_id)
+            var[sipuserbot] = token
             var[botusername] = f"@{username}"
         LOGS.info(f"SELESAI, ASSISTANT BOT ANDA SUDAH DIBUAT @{username}")
     else:
