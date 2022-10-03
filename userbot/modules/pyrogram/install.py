@@ -7,7 +7,7 @@
 
 import os
 
-from userbot._func.decorators import Nande_cmd as sip-userbot_on_cmd
+from userbot._func.decorators import Nande_cmd as sipuserbot_on_cmd
 from userbot._func.startup import load_modulesPyro as load_plugin
 from userbot._func._helpers import edit_or_reply
 from . import HELP
@@ -17,7 +17,7 @@ HELP(
     "install",
 )
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["install"],
     cmd_help={
         "help": "Install Custom Plugins In Userbot",
