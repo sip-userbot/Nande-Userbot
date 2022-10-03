@@ -4,7 +4,7 @@
 # t.me/PandaUserbot
 # ••••••••••••••••••••••√•••••••••••••√√√••••••••
  
-from userbot._func.decorators import Nande_cmd as sip-userbot_on_cmd
+from userbot._func.decorators import Nande_cmd as sipuserbot_on_cmd
 from userbot._func._helpers import edit_or_reply
 from . import HELP
 
@@ -13,7 +13,7 @@ HELP(
     "joingrup",
 )
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["joingrup"],
     cmd_help={
         "help": "Untuk bergabung ke obrolan dengan username gc",
@@ -21,7 +21,7 @@ HELP(
     },
 )
 async def join(client, message):
-    panda = message.command[1] if len(message.command) > 1 else message.chat.id
+    nande = message.command[1] if len(message.command) > 1 else message.chat.id
     xxnx = await edit_or_reply(message, "`Processing...`")
     try:
         await xxnx.edit(f"**Berhasil Bergabung ke Chat ID** `{panda}`")
@@ -30,7 +30,7 @@ async def join(client, message):
         await xxnx.edit(f"**ERROR:** \n\n{str(ex)}")
 
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["leavegrup", "kickme"],
     cmd_help={
         "help": "Untuk keluar ke obrolan gc",
@@ -55,7 +55,7 @@ async def leave(client, message):
     },
 )
 async def kickmeall(client, message):
-    panda = await edit_or_reply(message, "`Global Leave from group chats...`")
+    nande = await edit_or_reply(message, "`Global Leave from group chats...`")
     er = 0
     done = 0
     async for dialog in client.iter_dialogs():
