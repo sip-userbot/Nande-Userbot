@@ -21,7 +21,7 @@ HELP(
     "gps",
 )
 
-@ilhammansiz_on_cmd(
+@sipuserbot_on_cmd(
     ["gps"],
     cmd_help={
         "help": "Temukan dan kirim lokasi yang diberikan",
