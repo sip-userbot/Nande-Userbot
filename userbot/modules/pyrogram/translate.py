@@ -14,7 +14,7 @@ from ... import Config
 from googletrans import Translator
 from gtts import gTTS
 from pyrogram.types import Message
-from userbot._func.decorators import Nande_cmd as sip-userbot_on_cmd
+from userbot._func.decorators import Nande_cmd as sipuserbot_on_cmd
 
 from . import HELP
 
@@ -51,7 +51,7 @@ HELP(
     "speedtest",
 )
 
-@sip-userbot_on_cmd(['tr', 'st'],
+@sipuserbot_on_cmd(['tr', 'st'],
                cmd_help={
                 'help': 'Translate message.',
                 'example': '{ch}tr'})
@@ -80,7 +80,7 @@ async def translate(client, message):
         await message.edit_text(str(exc))
 
 
-@sip-userbot_on_cmd(['tts', 'ts'],
+@sipuserbot_on_cmd(['tts', 'ts'],
                cmd_help={
                 'help': 'Voice message.',
                 'example': '{ch}tts'})
