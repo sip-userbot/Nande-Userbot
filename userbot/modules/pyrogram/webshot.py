@@ -6,7 +6,7 @@
  
 
 from bs4 import BeautifulSoup
-from userbot._func.decorators import Nande_cmd as sip-userbot_on_cmd
+from userbot._func.decorators import Nande_cmd as sipuserbot_on_cmd
 from userbot._func._helpers import edit_or_reply, get_text, humanbytes
 from hashlib import md5
 import aiofiles
@@ -52,7 +52,7 @@ HELP(
     "webshot",
 )
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["webshot", "ws"],
     cmd_help={
         "help": "Take A Screen Shot Of A Website.",
