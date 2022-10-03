@@ -42,7 +42,6 @@ def convert(text):
     return audio
 
 
-from ..._func.decorators import Panda_cmd as ilhammansiz_on_cmd
 
 from . import HELP
 
