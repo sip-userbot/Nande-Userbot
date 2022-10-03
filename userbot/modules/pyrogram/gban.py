@@ -9,7 +9,7 @@ from pyrogram import filters
 from userbot.modules.pyrogram.database.gbandb import gban_info, gban_list, gban_user, ungban_user
 from userbot.modules.pyrogram.database.gmutedb import gmute, is_gmuted, ungmute
 from userbot.Var import Config
-from userbot._func.decorators import Nande_cmd as sip-userbot_on_cmd, listen
+from userbot._func.decorators import Nande_cmd as sipuserbot_on_cmd, listen
 from userbot._func._helpers import (
     edit_or_reply,
     edit_or_send_as_file,
@@ -26,7 +26,7 @@ HELP(
     "gban",
 )
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["gmute"],
     cmd_help={
         "help": "Nonaktifkan Pengguna Secara Global!",
@@ -66,7 +66,7 @@ async def gmute_him(client, message):
     await log.log_msg(client, gmu)
 
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["ungmute"],
     cmd_help={
         "help": "Suarakan Pengguna Secara Global!",
@@ -101,7 +101,7 @@ async def gmute_him(client, message):
     await log.log_msg(client, ugmu)
 
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["gban"],
     cmd_help={
         "help": "Larang Pengguna Secara Global!",
@@ -154,7 +154,7 @@ async def gbun_him(client, message):
     await log.log_msg(client, gbanned)
 
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["ungban"],
     cmd_help={
         "help": "Unban Pengguna Secara Global!",
@@ -231,7 +231,7 @@ async def watch(client, message):
     
 
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["gbanlist"],
     cmd_help={
         "help": "Dapatkan Daftar Pengguna yang Dilarang Secara Global!",
@@ -250,7 +250,7 @@ async def give_glist(client, message):
     await edit_or_send_as_file(oof, glist, client, "GbanList", "Gban-List")
 
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["gbroadcast"],
     cmd_help={
         "help": "Kirim Pesan Ke Semua Obrolan, Anda Masuki!",
