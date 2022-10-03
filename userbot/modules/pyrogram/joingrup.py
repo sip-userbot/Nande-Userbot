@@ -21,7 +21,7 @@ HELP(
     },
 )
 async def join(client, message):
-    nande = message.command[1] if len(message.command) > 1 else message.chat.id
+    message.command[1] if len(message.command) > 1 else message.chat.id
     xxnx = await edit_or_reply(message, "`Processing...`")
     try:
         await xxnx.edit(f"**Berhasil Bergabung ke Chat ID** `{panda}`")
