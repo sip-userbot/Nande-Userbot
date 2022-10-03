@@ -13,7 +13,7 @@ import traceback
 
 import requests
 
-from userbot._func.decorators import Nande_cmd as sip-userbot_on_cmd
+from userbot._func.decorators import Nande_cmd as sipuserbot_on_cmd
 from userbot._func._helpers import (
     edit_or_reply,
     edit_or_send_as_file,
@@ -78,7 +78,7 @@ langs = [
 EVAL = "**▶ Code :** \n`{code}` \n\n**▶ Output / TraceBack :** \n`{result}`"
 
 
-@ilhammansiz_on_cmd(
+@sipuserbot_on_cmd(
     cmd=["exec", "eval"],
     ignore_errors=True,
     cmd_help={"help": "Run Python Code!", "example": '{ch}eval print("Nande - UserBot")'},
@@ -131,7 +131,7 @@ async def aexec(code, client, message):
     return await locals()["__aexec"](client, message)
 
 
-@ilhammansiz_on_cmd(
+@sipuserbot_on_cmd(
     cmd=["rc", "run"],
     cmd_help={
         "help": "Reply To Any Programming Language's Code To Eval In Telegram!",
@@ -195,7 +195,7 @@ async def any_lang_cmd_runner(client, message):
     )
 
 
-@ilhammansiz_on_cmd(
+@sipuserbot_on_cmd(
     cmd=["bash", "terminal"],
     ignore_errors=True,
     cmd_help={"help": "Run Bash/Terminal Command!", "example": "{ch}bash ls"},
