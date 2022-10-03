@@ -41,7 +41,7 @@ pmtext = SqL.getdb("get_pm_text") or msg
 pmthumb = SqL.getdb("get_thumb") or ""
 SqL.getdb("set_pm_spam_limit") or 4
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["setpmtext"],
     cmd_help={
         "help": "Set Custom On Text!",
@@ -71,7 +71,7 @@ async def set_custom_pm_texts(client, message):
     await message.edit(f"PM-Message Sucessfully Changed To `{ptext}`")
 
 
-@ilhammansiz_on_cmd(
+@sipuserbot_on_cmd(
     ["setpmlimit"],
     cmd_help={
         "help": "Set Pm Limit!",
@@ -99,7 +99,7 @@ async def set_custom_pm_texts(client, message):
     await message.edit(f"PM-Message-Limit Sucessfully Changed To `{ptext}`")
 
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["block"],
     cmd_help={
         "help": "Block Replied User!",
@@ -136,7 +136,7 @@ async def blockz(client, message):
         await message.delete()
 
 
-@ilhammansiz_on_cmd(
+@sipuserbot_on_cmd(
     ["unblock"],
     cmd_help={
         "help": "Unblock Replied Uset!",
@@ -163,7 +163,7 @@ async def unmblock(client, message):
         await message.delete()
 
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["ok", "accept", "allow"],
     cmd_help={
         "help": "Allow User To Pm you!",
@@ -215,7 +215,7 @@ async def allow(client, message):
         await message.delete()
 
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["ga", "disaccept", "disallow", "disapprove"],
     cmd_help={
         "help": "Disallow User To Pm you!",
@@ -269,7 +269,7 @@ async def disallow(client, message):
         await message.delete()
 
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["setpmpic", "spp"],
     cmd_help={
         "help": "Set Replied Image As Your Pm Permit Image.",
