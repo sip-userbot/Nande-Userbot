@@ -1,6 +1,6 @@
 
 import base64
-from userbot._func.decorators import Nande_cmd as sip-userbot_on_cmd
+from userbot._func.decorators import Nande_cmd as sipuserbot_on_cmd
 from userbot._func._helpers import get_arg
 
 from . import HELP
@@ -12,7 +12,7 @@ HELP(
 
 
 
-@sip-userbot_on_cmd(['en', 'encode'],
+@sipuserbot_on_cmd(['en', 'encode'],
                cmd_help={
                 'help': 'Base64.',
                 'example': '{ch}en Mengkodekan textbase64'})
@@ -28,7 +28,7 @@ async def encode(client, message):
         f"**=>> Encoded Text :** `{ppk}`\n\n**=>> OUTPUT :**\n`{atc}`"
     )
 
-@sip-userbot_on_cmd(['de', 'de'],
+@sipuserbot_on_cmd(['de', 'de'],
                cmd_help={
                 'help': 'Base64.',
                 'example': '{ch}de Membuka textbase64'})
