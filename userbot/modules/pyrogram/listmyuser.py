@@ -8,7 +8,7 @@
 
 import pyrogram
 
-from userbot._func.decorators import Nande_cmd as sip-userbot_on_cmd
+from userbot._func.decorators import Nande_cmd as sipuserbot_on_cmd
 from userbot._func._helpers import edit_or_reply, edit_or_send_as_file
 from . import HELP
 
@@ -17,7 +17,7 @@ HELP(
     "listmyuser",
 )
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["listmyusernames"],
     cmd_help={
         "help": "Get All Admin Channel / Chat List",
