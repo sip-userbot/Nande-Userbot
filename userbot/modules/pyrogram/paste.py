@@ -2,7 +2,7 @@ import os
 
 import requests
 
-from userbot._func.decorators import Panda_cmd as sip-userbot_on_cmd
+from userbot._func.decorators import Nande_cmd as sipuserbot_on_cmd
 from userbot._func._helpers import edit_or_reply, get_text
 from . import HELP
 
@@ -11,7 +11,7 @@ HELP(
     "paste",
 )
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["paste"],
     cmd_help={
         "help": "Pastes The File Text In Nekobin!",
