@@ -10,7 +10,7 @@ from io import BytesIO
 
 from aiohttp import ClientSession
 from userbot import pyrobot as app
-from userbot._func.decorators import Nande_cmd as sip-userbot_on_cmd
+from userbot._func.decorators import Nande_cmd as sipuserbot_on_cmd
 from userbot._func._helpers import edit_or_reply
 
 from . import HELP
@@ -29,7 +29,7 @@ async def make_carbon(code):
     return image
 
 
-@ilhammansiz_on_cmd(['carbon', 'cr'],
+@sipuserbot_on_cmd(['carbon', 'cr'],
                cmd_help={
                 'help': 'Carbon.',
                 'example': '{ch}carbon reply ke textt'})
