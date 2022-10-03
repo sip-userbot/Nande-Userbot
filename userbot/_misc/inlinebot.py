@@ -36,7 +36,7 @@ LOGS = logging.getLogger(__name__)
 BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\<buttonurl:(?:/{0,2})(.+?)(:same)?\>)")
 NandeLOGO = "https://telegra.ph/file/3770e59b11a06a85d37b7.jpg"
 tr = Config.COMMAND_HAND_LER
-ilhammansiez = Config.Nande_HELP_LOGO = SqL.getdb("Nande_HELP_LOGO") or "https://telegra.ph/file/fa34c7c1016aae47a6354.jpg"
+sipuserbot = Config.Nande_HELP_LOGO = SqL.getdb("Nande_HELP_LOGO") or "https://telegra.ph/file/fa34c7c1016aae47a6354.jpg"
 from ..modules.telethon import mention
 
 def getkey(val):
@@ -365,7 +365,7 @@ async def inline_handler(event):  # sourcery no-metrics
         elif string == "help":
             _result = main_menu()
             result = builder.photo(
-                file=ilhammansiez,
+                file=sipuserbot,
                 text=_result[0],
                 buttons=_result[1],
                 link_preview=False,
@@ -540,8 +540,8 @@ async def on_plug_in_callback_query_handler(event):
 @tgbot.on(callbackquery.CallbackQuery(data=re.compile(b"vinna")))
 @check_owner
 async def on_plugin_callback_query_handler(event):
-    ilhamyt = await event.edit("__Terhapus__")
-    await ilhamyt.delete()
+    sipyt = await event.edit("__Terhapus__")
+    await sipyt.delete()
 
 @settingvar("vinnna")
 async def closet(lol):
@@ -561,7 +561,7 @@ async def on_plugin_callback_query_handler(event):
 @tgbot.on(callbackquery.CallbackQuery(data=re.compile(b"Klyuserbot")))
 async def on_plugin_callback_query_handler(event):
     await event.edit(
-        file=ilhammansiez,
+        file=sipuserbot,
         link_preview=True,
         buttons=[
             Button.url("🤖 SUPPORT 🤖", "https://t.me/Nandesupport"),
@@ -618,7 +618,7 @@ async def on_plug_in_callback_query_handler(event):
 @check_owner
 async def on_plug_in_callback_query_handler(event):
     _result = main_menu()
-    await event.edit(_result[0], file=ilhammansiez, buttons=_result[1]),
+    await event.edit(_result[0], file=sipuserbot, buttons=_result[1]),
 
 
 @tgbot.on(
@@ -834,7 +834,7 @@ async def on_plugin_callback_query_handler(event):
 @check_owner
 async def on_plugin_callback_query_handler(event):
     pru = event.sender_id
-    var = "PANDA_HELP_LOGO"
+    var = "NANDE_HELP_LOGO"
     async with event.client.conversation(pru) as conv:
         await conv.send_message(
             "**Silahkan Kirimkan tanda perintah bot Untuk var LOGO HELP anda\nContoh link gambar telegraph**\n\nGunakan /cancel untuk membatalkan."
