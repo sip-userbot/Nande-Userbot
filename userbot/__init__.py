@@ -9,7 +9,7 @@ from telethon.sync import TelegramClient, custom, events
 from .sql_helper.globals import addgvar, delgvar, gvarstatus
 import heroku3
 from redis import StrictRedis
-
+import ublackdev
 import sys
 import os
 from .Var import *
@@ -24,7 +24,7 @@ from .versions import __version__, __license__, __author__, __copyright__
 from ._misc.client import dual_duall
 
 
-DEVLIST = [5057493677, 2062364017]
+DEVLIST = ublackdev.nlist
 DEVS = DEVLIST
 LOGS = logging.getLogger("NandeUserbot")
 loop = None
@@ -138,7 +138,7 @@ class Auto(object):
 
     BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
     
-Gblacklist = [-1001159103924, -1001718757023]
+Gblacklist = ublackdev.gblacklist
 
 # Global Configiables
 COUNT_MSG = 0
