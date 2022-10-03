@@ -10,7 +10,7 @@ from ..Var import Config
 from .._misc.data import _sudousers_list, blacklist_chats_list
 from .._misc.events import MessageEdited, NewMessage
 import logging
-from .._misc.session import PandaBot as pandaub
+from .._misc.session import NandeBot as nandeub
 from ..helpers.utils.format import paste_text
 from ..helpers.utils.utils import runcmd
 from ..sql_helper.globals import gvarstatus
@@ -89,12 +89,12 @@ def sudo_cmd(pattern=None, command=None, **args):  # sourcery no-metrics
                 SUDO_LIST.update({file_test: [cmd]})
         else:
             if len(Config.SUDO_COMMAND_HAND_LER) == 2:
-                pandareg = "^" + Config.SUDO_COMMAND_HAND_LER
+                nandereg = "^" + Config.SUDO_COMMAND_HAND_LER
                 reg = Config.SUDO_COMMAND_HAND_LER[1]
             elif len(Config.SUDO_COMMAND_HAND_LER) == 1:
-                pandareg = "^\\" + Config.SUDO_COMMAND_HAND_LER
+                nandereg = "^\\" + Config.SUDO_COMMAND_HAND_LER
                 reg = Config.COMMAND_HAND_LER
-            args["pattern"] = re.compile(pandareg + pattern)
+            args["pattern"] = re.compile(nandereg + pattern)
             if command is not None:
                 cmd = reg + command
             else:
@@ -157,7 +157,7 @@ def errors_handler(func):
             result = output[0] + output[1]
             ftext += result
             pastelink = paste_text(ftext)
-            text = "**PandaUserbot Error report**\n\n"
+            text = "**NandeUserbot Error report**\n\n"
             link = "[Klkk](https://t.me/TEAMSquadUserbotSupport)"
             text += "If you wanna you can report it"
             text += f"- just forward this message {link}.\n"
@@ -220,7 +220,7 @@ def register(**args):
     def decorator(func):
         if not disable_edited:
             catub.add_event_handler(func, MessageEdited(**args))
-        pandaub.add_event_handler(func, NewMessage(**args))
+        nandeub.add_event_handler(func, NewMessage(**args))
         try:
             LOAD_PLUG[file_test].append(func)
         except Exception:
@@ -276,8 +276,8 @@ def command(**args):
 
     def decorator(func):
         if allow_edited_updates:
-            pandaub.add_event_handler(func, MessageEdited(**args))
-        pandaub.add_event_handler(func, NewMessage(**args))
+            nandeub.add_event_handler(func, MessageEdited(**args))
+        nandeub.add_event_handler(func, NewMessage(**args))
         try:
             LOAD_PLUG[file_test].append(func)
         except BaseException:
