@@ -7,7 +7,7 @@
 
 import wikipedia
 
-from userbot._func.decorators import Panda_cmd as ilhammansiz_on_cmd
+from userbot._func.decorators import Nande_cmd as sipuserbot_on_cmd
 from userbot._func._helpers import edit_or_reply
 from . import HELP
 
@@ -16,7 +16,7 @@ HELP(
     "wikipedia",
 )
 
-@ilhammansiz_on_cmd(['wiki', 'wk'],
+@sipuserbot_on_cmd(['wiki', 'wk'],
                cmd_help={
                 'help': '『 **Wikipedia** 』',
                 'example': '{ch}[Kata] -> Mencari kata di wikipedia'})
