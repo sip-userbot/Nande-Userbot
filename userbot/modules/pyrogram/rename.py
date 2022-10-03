@@ -7,7 +7,7 @@
 
 import time
 
-from userbot._func.decorators import Nande_cmd as sip-userbot_on_cmd
+from userbot._func.decorators import Nande_cmd as sipuserbot_on_cmd
 from userbot._func._helpers import edit_or_reply, get_text, progress
 
 from . import HELP
@@ -17,7 +17,7 @@ HELP(
     "rename",
 )
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["rename", "rupload"],
     cmd_help={
         "help": "Rename File!",
