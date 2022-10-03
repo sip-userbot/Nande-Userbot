@@ -7,11 +7,11 @@ LOGS = logging.getLogger(__name__)
 
 
 # Admin checker by uniborg
-async def is_admin(PandaBot, chat_id, userid):
+async def is_admin(NandeBot, chat_id, userid):
     if not str(chat_id).startswith("-100"):
         return False
     try:
-        req_jo = await PandaBot(GetParticipantRequest(chat_id, userid))
+        req_jo = await NandeBot(GetParticipantRequest(chat_id, userid))
         chat_participant = req_jo.participant
         if isinstance(
             chat_participant, (ChannelParticipantCreator, ChannelParticipantAdmin)
