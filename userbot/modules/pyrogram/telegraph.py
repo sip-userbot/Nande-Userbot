@@ -10,7 +10,7 @@ import os
 
 from telegraph import Telegraph, exceptions, upload_file
 
-from userbot._func.decorators import Nande_cmd as sip-userbot_on_cmd
+from userbot._func.decorators import Nande_cmd as sipuserbot_on_cmd
 from userbot._func._helpers import edit_or_reply, get_text
 from userbot._func.plugin_helpers import convert_to_image
 
@@ -25,7 +25,7 @@ HELP(
     "telegraph",
 )
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["telegraph"],
     cmd_help={
         "help": "Get Telegraph link of replied image",
