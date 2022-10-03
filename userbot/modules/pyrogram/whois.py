@@ -2,7 +2,7 @@
 from pyrogram.errors import RPCError
 from pyrogram.types import User
 
-from userbot._func.decorators import Nande_cmd as sip-userbot_on_cmd
+from userbot._func.decorators import Nande_cmd as sipuserbot_on_cmd
 from userbot import pyrobot as app
 from . import HELP
 
@@ -32,7 +32,7 @@ def FullName(user: User):
     return user.first_name + " " + user.last_name if user.last_name else user.first_name
 
 
-@sip-userbot_on_cmd(['whois', 'wh'],
+@sipuserbot_on_cmd(['whois', 'wh'],
                cmd_help={
                 'help': 'Whois.',
                 'example': '{ch}whois'})
@@ -101,7 +101,7 @@ async def whois(client, message):
                 disable_web_page_preview=True)
 
 
-@sip-userbot_on_cmd(['id', 'id'],
+@sipuserbot_on_cmd(['id', 'id'],
                cmd_help={
                 'help': 'id',
                 'example': '{ch}id'})
@@ -126,7 +126,7 @@ async def id(client, message):
     text = "**User ID**: `{}`\n**Chat ID**: `{}`".format(user.id, chat_id)
     await message.edit(text)
 
-@sip-userbot_on_cmd(['grab', 'gr'],
+@sipuserbot_on_cmd(['grab', 'gr'],
                cmd_help={
                 'help': 'Grab.',
                 'example': '{ch}grab'})
