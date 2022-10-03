@@ -3,7 +3,7 @@ from datetime import datetime
 from pyrogram import filters
 
 from userbot.modules.pyrogram.database.afk import check_afk, go_afk, no_afk
-from ..._func.decorators import ilhammansiz_on_cmd, listen
+from ..._func.decorators import sipuserbot_on_cmd, listen
 from ..._func._helpers import edit_or_reply, get_text
 from ..._func.logger_s import LogIt
 
@@ -21,7 +21,7 @@ async def is_afk_(f, client, message):
 is_afk = filters.create(func=is_afk_, name="is_afk_")
 
 
-@ilhammansiz_on_cmd(
+@sipuserbot_on_cmd(
     ["afk"],
     propagate_to_next_handler=False,
     cmd_help={
