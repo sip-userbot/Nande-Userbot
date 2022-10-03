@@ -6,7 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
 
-from userbot._func.decorators import Nande_cmd as sip-userbot_on_cmd
+from userbot._func.decorators import Nande_cmd as sipuserbot_on_cmd
 from userbot._func._helpers import edit_or_reply, get_text
 from . import HELP
 
@@ -15,7 +15,7 @@ HELP(
     "search",
 )
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["duckduckgo", "ddg"],
     cmd_help={"help": "duckduckgo searcher!", "example": "{ch}ddg (query to search)"},
 )
@@ -34,7 +34,7 @@ async def duckduckgo(client, message):
     )
 
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["gs", "grs", "google"],
     cmd_help={"help": "Google Searcher!", "example": "{ch}gs (query to search)"},
 )
