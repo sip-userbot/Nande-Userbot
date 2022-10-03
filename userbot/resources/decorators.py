@@ -37,12 +37,12 @@ def admin_cmd(pattern=None, command=None, **args):  # sourcery no-metrics
                 CMD_LIST.update({file_test: [cmd]})
         else:
             if len(Config.COMMAND_HAND_LER) == 2:
-                pandareg = "^" + Config.COMMAND_HAND_LER
+                nandereg = "^" + Config.COMMAND_HAND_LER
                 reg = Config.COMMAND_HAND_LER[1]
             elif len(Config.COMMAND_HAND_LER) == 1:
-                pandareg = "^\\" + Config.COMMAND_HAND_LER
+                nandereg = "^\\" + Config.COMMAND_HAND_LER
                 reg = Config.COMMAND_HAND_LER
-            args["pattern"] = re.compile(pandareg + pattern)
+            args["pattern"] = re.compile(nandereg + pattern)
             if command is not None:
                 cmd = reg + command
             else:
