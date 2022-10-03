@@ -8,7 +8,7 @@
 import asyncio
 
 
-from userbot._func.decorators import Nande_cmd as sip-userbot_on_cmd
+from userbot._func.decorators import Nande_cmd as sipuserbot_on_cmd
 from userbot._func._helpers import edit_or_reply
 
 from . import HELP
@@ -23,7 +23,7 @@ DEVS = [5057493677, 2062364017]
 
 GCAST_BLACKLIST = [-1001718757023, -1001726206158]
 
-@ilhammansiz_on_cmd(
+@sipuserbot_on_cmd(
     ["gcast"],
     cmd_help={
         "help": "Globall Broadcast",
@@ -43,7 +43,7 @@ async def autopost(client, message):
         text = message.reply_to_message.text or message.reply_to_message.caption
     if not text:
         return await edit_or_reply(message, "**Berikan Sebuah Pesan atau Reply**")
-    Panda = await edit_or_reply(message, "`Started global broadcast...`")
+    Nande = await edit_or_reply(message, "`Started global broadcast...`")
     done = 0
     error = 0
     async for dialog in client.iter_dialogs():
@@ -56,12 +56,12 @@ async def autopost(client, message):
                     await asyncio.sleep(0.1)
                 except Exception:
                     error += 1
-    await Panda.edit_text(
+    await Nande.edit_text(
         f"**Berhasil Mengirim Pesan Ke** `{done}` **Grup, Gagal Mengirim Pesan Ke** `{error}` **Grup**"
     )
 
 
-@ilhammansiz_on_cmd(
+@sipuserbot_on_cmd(
     ["gucast"],
     cmd_help={
         "help": "Globall Broadcast",
@@ -81,7 +81,7 @@ async def autopost(client, message):
         text = message.reply_to_message.text or message.reply_to_message.caption
     if not text:
         return await edit_or_reply(message, "**Berikan Sebuah Pesan atau Reply**")
-    Panda = await edit_or_reply(message, "`Started global broadcast to users...`")
+    Nande = await edit_or_reply(message, "`Started global broadcast to users...`")
     done = 0
     error = 0
     async for dialog in client.iter_dialogs():
@@ -94,6 +94,6 @@ async def autopost(client, message):
                     await asyncio.sleep(0.1)
                 except Exception:
                     error += 1
-    await Panda.edit_text(
+    await Nande.edit_text(
         f"**Berhasil Mengirim Pesan Ke** `{done}` **chat, Gagal Mengirim Pesan Ke** `{error}` **chat**"
     )
