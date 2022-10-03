@@ -1,7 +1,7 @@
 from pyrogram import filters
 
 from userbot import Config, SqL
-from userbot._func.decorators import Nande_cmd as sip-userbot_on_cmd, listen
+from userbot._func.decorators import Nande_cmd as sipuserbot_on_cmd, listen
 from userbot._func._helpers import edit_or_reply
 from . import HELP
 from userbot.modules.pyrogram.database.welcomedb import add_welcome, del_welcome, welcome_info
@@ -13,7 +13,7 @@ HELP(
 
 WELCOME = SqL.getdb("Welcomes") or "Hello How AR U?"
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["setwelcome"],
     cmd_help={
         "help": "Save Welcome Message!",
@@ -77,7 +77,7 @@ async def is_media(message):
     return True
 
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["delwelcome"],
     cmd_help={"help": "Delete welcome Message!", "example": "{ch}delwelcome"},
 )
@@ -90,7 +90,7 @@ async def del_welcomez(client, message):
     await note_.edit(f"`Welcome Message Deleted Successfully!`")
 
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["welcome"],
     cmd_help={"help": "Current Welcome Message!", "example": "{ch}welcome"},
 )
