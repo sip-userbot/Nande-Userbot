@@ -15,7 +15,7 @@ import uuid
 import img2pdf
 
 
-from userbot._func.decorators import Nande_cmd as sip-userbot_on_cmd
+from userbot._func.decorators import Nande_cmd as sipuserbot_on_cmd
 from userbot._func._helpers import (
     edit_or_reply,
     get_text,
@@ -30,7 +30,7 @@ HELP(
     "file",
 )
 
-@ilhammansiz_on_cmd(
+@sipuserbot_on_cmd(
     ["chnnlzip", "channelzip"],
     cmd_help={
         "help": "Zips All The Messages/Files/Everything From A Channel/Group",
@@ -93,7 +93,7 @@ def file_list(path, lisT):
     return lisT
 
 
-@ilhammansiz_on_cmd(
+@sipuserbot_on_cmd(
     ["pdf", "channelpdf"],
     cmd_help={
         "help": "Makes A PDF With All Images In Group/Channel!",
@@ -139,7 +139,7 @@ async def chnnlpdf(client, message):
     await pablo.delete()
 
 
-@ilhammansiz_on_cmd(
+@sipuserbot_on_cmd(
     ["Download"],
     cmd_help={
         "help": "Downloads Replied File To Local Storage!",
@@ -161,7 +161,7 @@ async def Download(client, message):
     await pablo.edit(f"Downloaded to `{Escobar}` Successfully!")
 
 
-@ilhammansiz_on_cmd(
+@sipuserbot_on_cmd(
     ["setthumb"],
     cmd_help={
         "help": "Set Thumbnail For Upload Files!",
@@ -188,7 +188,7 @@ sticker_ext = tuple([".wepb", ".tgs"])
 song_ext = tuple([".mp3", ".wav", ".m4a"])
 
 
-@ilhammansiz_on_cmd(
+@sipuserbot_on_cmd(
     ["Upload"],
     cmd_help={
         "help": "Upload Internal File!",
