@@ -1,5 +1,5 @@
 from userbot import CMD_LIST, XTRA_CMD_LIST, pyrotgbot as bot
-from userbot._func.decorators import Config, Nande_cmd as sip-userbot_on_cmd
+from userbot._func.decorators import Config, Nande_cmd as sipuserbot_on_cmd
 from userbot._func._helpers import edit_or_reply, get_text
 from . import HELP, CMD_HELP
 
@@ -9,7 +9,7 @@ HELP(
 )
 
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["inline", "helper"],
     cmd_help={
         "help": "Gets Help Menu",
@@ -42,7 +42,7 @@ async def help(client, message):
             await f_.edit(help_s)
 
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["help", "ahelper"],
     cmd_help={
         "help": "Gets Help List & Info",
@@ -71,7 +71,7 @@ def get_help_str(string):
     return CMD_LIST[string]
     
 def prepare_cmd_list():
-    main_l = f"<b><u> __PandaUserbot CommandList__ </b></u> \n\n<b> __Number CommandList__ ({len(CMD_HELP)}) :</b> \n\n"
+    main_l = f"<b><u> __NandeUserbot CommandList__ </b></u> \n\n<b> __Number CommandList__ ({len(CMD_HELP)}) :</b> \n\n"
     for i in CMD_HELP:
         if i:
             main_l += f"<code>{i}</code>    "
