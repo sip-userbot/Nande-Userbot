@@ -6,7 +6,7 @@
  
 
 import os
-from userbot._func.decorators import Nande_cmd as sip-userbot_on_cmd
+from userbot._func.decorators import Nande_cmd as sipuserbot_on_cmd
 from userbot._func._helpers import edit_or_reply, runcmd
 from . import HELP
 
@@ -16,7 +16,7 @@ HELP(
 )
 
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["ttg"],
     cmd_help={
         "help": "Convert Tgs To Gif",
