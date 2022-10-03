@@ -7,7 +7,7 @@
 
 
 import speedtest
-from userbot._func.decorators import Nande_cmd as sip-userbot_on_cmd
+from userbot._func.decorators import Nande_cmd as sipuserbot_on_cmd
 from userbot._func._helpers import edit_or_reply
 
 from . import HELP
@@ -17,7 +17,7 @@ HELP(
     "speedtest",
 )
 
-@sip-userbot_on_cmd(['speedtest', 'st'],
+@sipuserbot_on_cmd(['speedtest', 'st'],
                cmd_help={
                 'help': 'Test Your Server Speed.',
                 'example': '{ch}speedtest'})
