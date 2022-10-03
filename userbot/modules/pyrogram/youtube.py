@@ -22,7 +22,7 @@ HELP(
 
 
 
-@sip-userbot_on_cmd(['video', 'vd'],
+@sipuserbot_on_cmd(['video', 'vd'],
                cmd_help={
                 'help': '『 **YouTube** 』',
                 'example': '{ch}video` [link atau tulisan] -> Download video dari yt'})
@@ -83,7 +83,7 @@ async def yt_vid(client, message):
             os.remove(files)
 
 
-@sip-userbot_on_cmd(['song', 'so'],
+@sipuserbot_on_cmd(['song', 'so'],
                cmd_help={
                 'help': '『 **YouTube** 』',
                 'example': '{ch}song` [link atau tulisan] -> Download Song dari yt'})
