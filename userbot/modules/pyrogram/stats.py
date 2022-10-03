@@ -7,7 +7,7 @@
 
 from datetime import datetime
 
-from userbot._func.decorators import Nande_cmd as sip-userbot_on_cmd
+from userbot._func.decorators import Nande_cmd as sipuserbot_on_cmd
 from userbot._func._helpers import edit_or_reply
 from . import HELP
 
@@ -16,7 +16,7 @@ HELP(
     "stats",
 )
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["stats", "stat"],
     cmd_help={
         "help": "Shows user account stats!",
