@@ -1,6 +1,6 @@
 # 
 
-from userbot._func.decorators import Nande_cmd as sip-userbot_on_cmd
+from userbot._func.decorators import Nande_cmd as sipuserbot_on_cmd
 from userbot._func._helpers import edit_or_reply
 import calendar
 from datetime import datetime
@@ -12,7 +12,7 @@ HELP(
     "time_",
 )
 
-@sip-userbot_on_cmd(['time'],
+@sipuserbot_on_cmd(['time'],
                cmd_help={
                    "help": "Check Current Date , Time & Calender.",
                    "example": "{ch}time"
