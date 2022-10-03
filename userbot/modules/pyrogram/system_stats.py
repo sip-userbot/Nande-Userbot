@@ -18,7 +18,7 @@ import psutil
 from pyrogram import __version__
 
 from userbot import Config, Nandeversion, StartTime as start_time, DB
-from userbot._func.decorators import Nande_cmd as sip-userbot_on_cmd
+from userbot._func.decorators import Nande_cmd as sipuserbot_on_cmd
 from userbot._func._helpers import (
     delete_or_pass,
     edit_or_reply,
@@ -33,7 +33,7 @@ HELP(
     "system_stats",
 )
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["ping", "pong"],
     cmd_help={"help": "Check Bot Uptime!", "example": "{ch}ping"},
 )
@@ -49,11 +49,11 @@ async def pingy(client, message):
     end = datetime.now()
     ms = (end - start).microseconds / 1000
     await hmm.edit(
-        f"**┏━《 **𝗣 𝗔 𝗡 𝗗 𝗔** 》━\n**┣➠  __Ping:__** `{ms}` \n┗➠ __Uptime:__ `{uptime}`",
+        f"**┏━《 **𝗡 𝗮 𝗻 𝗱 𝗲** 》━\n**┣➠  __Ping:__** `{ms}` \n┗➠ __Uptime:__ `{uptime}`",
     )
 
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["alive"],
     cmd_help={"help": "Get Alive Message Of Your Bot.!", "example": "{ch}alive"},
 )
@@ -86,7 +86,7 @@ async def amialive(client, message):
     await delete_or_pass(message)
 
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["sysinfo", "neofetch"],
     cmd_help={"help": "Get System Information!", "example": "{ch}sysinfo"},
 )
@@ -127,7 +127,7 @@ async def give_sysinfo(client, message):
     await edit_or_reply(message, neat_msg)
 
 
-@sip-userbot_on_cmd(
+@sipuserbot_on_cmd(
     ["restart"],
     cmd_help={"help": "Restart Your Bot!", "example": "{ch}restart"},
 )
