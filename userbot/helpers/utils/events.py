@@ -79,9 +79,9 @@ async def get_user_from_event(
 
 
 async def checking(nandeub):
-    base64.b64decode("QHN1cG9ydE5hbmRl")
+    nande_c = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
     try:
-        Get(nande_c)
+        nande_channel = Get(nande_c)
         await nandeub(nande_channel)
     except BaseException:
         pass
