@@ -37,7 +37,7 @@ if __name__ == "__main__":
         
     
     
-if userbot.PandaBot:
+if userbot.NandeBot:
     try:
         if len(sys.argv) not in (1, 3, 4):
             userbot.NandeBot.disconnect()
